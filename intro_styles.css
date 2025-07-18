@@ -1,0 +1,123 @@
+body {
+    background-color: #87ceeb;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-300%) rotate(45deg);
+    } to {
+        transform: translateY(0);
+        transform: rotate(5deg);
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #151515;
+    border-radius: 50px;
+    width: 35rem;
+    height: 20rem;
+    padding: 1.2rem;
+    gap: 0rem;
+    box-shadow: 0 0 10px #151515;
+    background-image: url("/assets/images/card-background.png");
+    transition: transform 50ms linear;
+}
+
+.card-animate {
+    transform: rotate(5deg);
+    transition: transform 50ms linear;
+    animation: moveDown;
+    animation-duration: 2s;    
+}
+
+.animate-disappear {
+    animation: disappear;
+    animation-duration: 500ms;
+    scale: 0;
+}
+
+@keyframes disappear {
+    from {
+        scale: 1;
+    } to {
+        scale: 0;
+    }
+}
+
+.rerotated {
+    transition: transform 250ms ease-out;
+    transform: rotate(0);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 15px;
+    gap: 10px;
+    font-family: 'Ubuntu';
+}
+
+.intro-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    gap: 15px
+}
+
+.intro-header {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.intro-button-container > button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'Ubuntu';
+    border: none;
+    background-color: #ffffff;
+    transition: padding 50ms linear;
+}
+
+.intro-button-container > button:hover {
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: #ededed;
+    font-size: 14px;
+}
+
+.fade-out {
+    animation-name: fadeOut;
+    animation-duration: 250ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    } to {  
+        opacity: 0;
+    }
+}
