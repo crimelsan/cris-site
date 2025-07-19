@@ -34,7 +34,7 @@ export default function Card() {
                 {!showCard && <div className={`${fadeOut ? 'fade-out' : ''}`} onAnimationEnd={renderCard}>
                     <div className="intro-button-container">
                         <span className="intro-header">Hello</span> 
-                        <p>Click on the button below to get my card!</p>
+                        <p>Click on the button below to get my personal card!</p>
                         <button onClick={fade}>Click here</button>
                     </div>
                 </div>}

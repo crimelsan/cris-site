@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #424242;
     font-family: 'Barlow Condensed';
@@ -17,6 +22,151 @@ body {
     animation: circle-shrink ease-in-out;
     animation-duration: 2s;
 }
+
+.gallery-container::before {
+    transform: scaleY(0)
+}
+
+.gallery-container {
+    height: 85vh;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 2px 5px #575757;
+    animation: gallery-fade ease-in-out;
+    animation-duration: 1.5s;
+}
+
+.head-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 100%;
+    gap: 10px;
+    color: #fff;
+    position: relative;
+    z-index: 20;
+}
+
+.head-text > h1 {
+    font-size: 100px;
+    letter-spacing: 2px;
+}
+
+.head-text > span {
+    font-size: 50px;
+    font-weight: 200;
+}
+
+@keyframes gallery-fade {
+    0% {
+        opacity: 0
+    } 
+    
+    100% {
+        opacity: 1
+    }
+}
+
+.overlay {
+    background-color: rgba(0.0,0.0,0.0,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1
+    }
+
+    10% {
+        opacity: 0
+    }
+
+    20% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    60% {
+        opacity: 0
+    }
+
+    70% {
+        opacity: 0
+    }
+
+    80% {
+        opacity: 0
+    }
+    
+    90% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.gallery-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-view-box: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fade 50s ease-in-out infinite alternate;
+}
+
+#one {
+    animation-delay: 50s
+}
+#two {
+    animation-delay: 45s
+}
+#three {
+    animation-delay: 40s
+}
+#four {
+    animation-delay: 35s
+}
+#five {
+    animation-delay: 30s
+}
+#six {
+    animation-delay: 25s
+}
+#seven {
+    animation-delay: 20s
+}
+#eight {
+    animation-delay: 15s
+}
+#nine {
+    animation-delay: 10s
+}
+#ten {
+    animation-delay: 5s
+}
+
 
 @keyframes circle-shrink {
     from {
