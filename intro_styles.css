@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #87ceeb;
 }
@@ -119,5 +121,28 @@ body {
         opacity: 1;
     } to {  
         opacity: 0;
+    }
+}
+
+.transition-container {
+    display: grid; 
+    place-items: center; 
+    height: 95vh; 
+}
+
+.circle-shrink {
+    background-image: url("/assets/images/background.png");
+    position: fixed;
+    padding: 1600px 1600px;
+    transform: scale(0);
+    animation: circle-shrink ease-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes circle-shrink {
+    from {
+        transform: scale(1) 
+    } to {
+        transform: scale(0) 
     }
 }

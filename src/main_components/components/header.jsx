@@ -1,8 +1,6 @@
-
-export default function Head() {
-    
+export default function Head() {    
     return (
-        <div>
+        <div style={{position: 'relative'}}>
             <div className="gallery-container">
                 <div className="overlay"/>
                 <img id="one" src="/assets/images/img1.png"/>
@@ -16,10 +14,9 @@ export default function Head() {
                 <img id="nine"src="/assets/images/img9.png"/>
                 <img id="ten"src="/assets/images/img10.png"/>
                 <div className="head-text">
-                    <h1>{"Welcome to my site >:)"}</h1>
-                    <span>i do things sometimes</span>
+                    <h1>{"Welcome to Cris's personal website >:D"}</h1>
+                    <span>he does things sometimes</span>
                 </div>
-
             </div>
         </div>
     )

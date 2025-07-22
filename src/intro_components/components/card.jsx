@@ -5,7 +5,7 @@ export default function Card() {
     const [fadeOut, setFadeOut] = React.useState(false)
     const [rerotate, setRerotate] = React.useState(false)
     const [disappearCard, setDisappearCard] = React.useState(false)
-    const [negateDiv, setNegateDiv] = React.useState(false)
+    const [transition, setTransition] = React.useState(false)
 
     function renderCard() {
         setShowCard(true)
@@ -23,14 +23,14 @@ export default function Card() {
         setDisappearCard(true)
     }
 
-    function doNegateDiv() {
-        setNegateDiv(true)
+    function moveToMain() {
         window.location.href = "/main.html"
     }
 
     return (
-        <>
-            <div className="container">
+        <body style={transition === true ? {backgroundColor: "#424242"} : {}}
+        >
+            {!transition && <div className="container">
                 {!showCard && <div className={`${fadeOut ? 'fade-out' : ''}`} onAnimationEnd={renderCard}>
                     <div className="intro-button-container">
                         <span className="intro-header">Hello</span> 
@@ -38,11 +38,11 @@ export default function Card() {
                         <button onClick={fade}>Click here</button>
                     </div>
                 </div>}
-                {!negateDiv && showCard && <div className={`card-animate ${rerotate ? 'rerotated' : ''}`} 
+                {showCard && <div className={`card-animate ${rerotate ? 'rerotated' : ''}`} 
                         onMouseEnter={hoverHandle} 
                         onClick={disappear}>
                     <div className={`card ${disappearCard ? 'animate-disappear' : ''}`}
-                        onAnimationEnd={doNegateDiv}>
+                        onAnimationEnd={() => setTransition(true)}>
                         <img 
                             src="/assets/images/card-profile.jpg"
                             style={{
@@ -61,7 +61,10 @@ export default function Card() {
                         </div>
                     </div>
                 </div>}
-            </div>
-        </>
+            </div>}
+            {transition && <div className="transition-container">
+                <div className="circle-shrink" onAnimationEnd={moveToMain}/>
+            </div>}
+        </body>
     )
 }
