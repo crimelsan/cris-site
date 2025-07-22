@@ -2,7 +2,7 @@ export default function Head() {
     return (
         <div style={{position: 'relative'}}>
             <div className="gallery-container">
-                <div className="overlay"/>
+                <div className="overlay"/> 
                 <img id="one" src="/assets/images/img1.png"/>
                 <img id="two"src="/assets/images/img2.png"/>
                 <img id="three"src="/assets/images/img3.png"/>
@@ -15,7 +15,7 @@ export default function Head() {
                 <img id="ten"src="/assets/images/img10.png"/>
                 <div className="head-text">
                     <h1>{"Welcome to Cris's personal website >:D"}</h1>
-                    <span>he does things sometimes</span>
+                    <span>he does things apparently</span>
                 </div>
             </div>
         </div>
