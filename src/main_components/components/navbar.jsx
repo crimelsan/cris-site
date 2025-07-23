@@ -14,7 +14,7 @@ export default function Navbar() {
                 Music
             </button>
             <button>
-                Photos
+                Gallery
             </button>
         </div>
     )
