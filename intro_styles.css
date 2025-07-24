@@ -14,7 +14,7 @@ body {
 
 @keyframes moveDown {
     from {
-        transform: translateY(-300%) rotate(45deg);
+        transform: translateY(-600%) rotate(45deg);
     } to {
         transform: translateY(0);
         transform: rotate(5deg);
@@ -146,3 +146,4 @@ body {
         transform: scale(0) 
     }
 }
+

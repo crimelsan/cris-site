@@ -246,7 +246,6 @@ body {
     align-items: center;
     border-radius: 2rem;
     gap: 1.5rem;
-    height: 46rem;
 }
 
 .about-body {
@@ -259,14 +258,14 @@ body {
 }
 
 .about-body > img {
-    width: 35%;
+    width: 15rem;
     border-radius: 25%;
     border: 1rem solid #474747;
     transition: width 250ms ease-out;
 }
 
 .about-body > img:hover {
-    width: 38%
+    width: 16rem
 }
 
 .about-body > span {
@@ -286,11 +285,11 @@ body {
 
 .link-container > a > img {
     width: 4rem;
-    transition: width 250ms ease-out
+    transition: width 250ms ease-out;
 }
 
-.link-container > a:hover > img{
-    width: 5rem
+.link-container > a:hover > img {
+    width: 5rem;
 }
 
 .project-container {
@@ -319,4 +318,25 @@ body {
     margin: 1.7rem 3rem 0;
     font-size: 30px;
     min-width: fit-content;
+}
+
+.project-head {
+    display: flex; 
+    flex-direction: row;
+    gap: 1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-head > img {
+    height: 5rem;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80rem;
+    margin: 2.5rem 5rem;
+    gap: 5rem;
 }
