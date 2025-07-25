@@ -1,19 +1,16 @@
-export default function Navbar() {
+export default function Navbar({home, blog, music, gallery}) {
     return (
         <div className="navbar">
-            <button>
-                About
+            <button onClick={home}>
+                Home
             </button>
-            <button>
-                Projects
-            </button>
-            <button>
+            <button onClick={blog}>
                 Blogs
             </button>
-            <button>
+            <button onClick={music}>
                 Music
             </button>
-            <button>
+            <button onClick={gallery}>
                 Gallery
             </button>
         </div>

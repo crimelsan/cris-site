@@ -56,13 +56,13 @@ export default function Projects() {
                         <div className="project-item-content">
                             <h1 style={{
                                 fontSize: "45px"
-                            }}>UIC Campus App</h1>
+                            }}>Safety Campus App</h1>
                             <h2>
                                 Current Status: <span style={{color: "#979797"}}>In-progress</span>
                             </h2>
                             <p style={{fontSize: "20px", margin: "1.5rem 0"}}>
                                 This is a little safety/social media app that I'm working on with a team of people. It's supposed to alert
-                                the user of any events around or things to watch out, mainly just for colleges. I'm excited to see what we end up making
+                                the user of any events around or things to watch out, mainly just for college stuff. I'm excited to see what we end up making
                                 out of this!
                             </p>
                         </div>
