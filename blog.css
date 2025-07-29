@@ -5,6 +5,20 @@
 
 body {
     background-color: #72DFC0;
+    background-image: url("/assets/images/blog-paper-background.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 65vw;
+    animation: background-grow ease-out forwards;
+    animation-duration: 2s;
+}
+
+@keyframes background-grow {
+    from {
+        background-position: center 150%;
+    } to {
+        background-position: center top;
+    }
 }
 
 .navbar {
@@ -17,6 +31,21 @@ body {
     overflow: hidden;
     width: 100%;
     background-color: #47474771;
+    animation: fade-in ease-out;
+    animation-duration: 1.5s;
+}
+
+.fade {
+    animation: fade-in ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    } to {
+        opacity: 1
+    }
 }
 
 .navbar > button {
@@ -82,4 +111,26 @@ body {
 
 .navbar > button:nth-child(4) {
     animation-delay: 400ms
+}
+
+.header {
+    font-family: 'Lora';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7.5rem;
+    gap: 2rem;
+}
+
+.header > h1 {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.header > p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 25rem;
 }
