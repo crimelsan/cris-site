@@ -134,3 +134,58 @@ body {
     font-weight: 500;
     margin: 0 25rem;
 }
+
+
+.fade-out {
+    animation: fade-out ease-out forwards;
+    animation-duration: 500ms;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+.transition-container {
+    display: grid; 
+    place-items: center; 
+    height: 95vh; 
+}
+
+.home-grow {
+    background-image: url("/assets/images/home-background.png");
+    position: fixed;
+    padding: 1600px 1600px;
+    transform: scale(0);
+    animation: circle-grow ease-in-out forwards;
+    animation-duration: 2s;
+}
+
+.music-grow {
+    background-image: url("/assets/images/music-background.png");
+    position: fixed;
+    padding: 1600px 1600px;
+    transform: scale(0);
+    animation: circle-grow ease-in-out forwards;
+    animation-duration: 2s;
+}
+
+.gallery-grow {
+    background-image: url("/assets/images/gallery-background.png");
+    position: fixed;
+    padding: 1600px 1600px;
+    transform: scale(0);
+    animation: circle-grow ease-in-out forwards;
+    animation-duration: 2s;
+}
+
+@keyframes circle-grow {
+    from {
+        transform: scale(0) 
+    } to {
+        transform: scale(1) 
+    }
+}
