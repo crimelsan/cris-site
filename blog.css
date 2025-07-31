@@ -8,6 +8,7 @@ body {
     background-image: url("/assets/images/blog-paper-background.png");
     background-repeat: no-repeat;
     background-position: center top;
+    background-attachment: fixed;
     background-size: 65vw;
     animation: background-grow ease-out forwards;
     animation-duration: 2s;
@@ -15,7 +16,7 @@ body {
 
 @keyframes background-grow {
     from {
-        background-position: center 150%;
+        background-position: center 200%;
     } to {
         background-position: center top;
     }
@@ -119,7 +120,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 7.5rem;
+    margin: 7.5rem 7.5rem 5rem;
     gap: 2rem;
 }
 
@@ -189,3 +190,73 @@ body {
         transform: scale(1) 
     }
 }
+
+.blog-body {
+    display: flex; 
+    justify-content: center;
+    gap: 5rem;
+    margin: 0 20rem 5rem;
+    flex-wrap: wrap;
+}
+
+.blog-item {
+    padding: 7rem 15rem;
+    min-width: 25rem;
+    min-height: 10rem;
+    max-height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    background: #ffffff;
+    border-radius: 2rem;
+    flex-basis: 25%;
+    font-family: 'Lora';
+    border: none;
+    box-shadow: 0 5px 5px #000000;
+    animation: fade-in ease-in;
+    animation-duration: 2s;
+    text-decoration: inherit;
+    color: inherit;
+    transition: min-width 200ms linear,
+                min-height 200ms linear;
+}
+
+.blog-item:hover {
+    min-width: 30.5rem;
+    min-height: 15rem;
+}
+
+.blog-item > img {
+    border: 0.5rem solid #ebebeb;
+    object-fit: cover;
+    height: 8rem;
+    border-radius: 1rem;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.general {
+    background: #1d7ce9;
+}
+
+.general > img {
+    border: 0.5rem solid #156acc;
+}
+
+
+.type {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: .5rem
+}
+
+.timestamp {
+    font-size: 12px
+}
+
