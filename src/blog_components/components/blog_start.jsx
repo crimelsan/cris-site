@@ -1,7 +1,4 @@
-import { useState } from "react"
-
-export default function BlogStart(props) {
-    const [article, setArticle] = useState(props.ID)
+export default function BlogStart({changeArticle, type, imgDirThumbnail, title, createdAt, ID}) {
 
     function determineBackground(type) {
         switch(type) {
@@ -25,13 +22,13 @@ export default function BlogStart(props) {
 
 
     return(
-        <button onClick className={`blog-item ${determineBackground(props.type)}`}>
-            <img src={props.imgDir}/>
+        <button onClick={() => changeArticle(ID)} className={`blog-item ${determineBackground(type)}`}>
+            <img src={imgDirThumbnail}/>
             <div className="blog-content">
-                <h1>{props.title}</h1>
+                <h1>{title}</h1>
                 <div>
-                    <p className="type">{props.type}</p>
-                    <p className="timestamp">{convertDate(props.createdAt)}</p>
+                    <p className="type">{type}</p>
+                    <p className="timestamp">{convertDate(createdAt)}</p>
                 </div>
             </div>
         </button>

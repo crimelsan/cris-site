@@ -8,7 +8,7 @@ export default function App() {
     const [tabState, setTabState] = useState("blog")
     const [newTabState, setNewTabState] = useState("")
     const [showBlog, setShowBlog] = useState(false)
-    const [filter, setFilter ] = useState("all")
+    const [filter, setFilter ] = useState("All")
     const [currArticle, setCurrArticle] = useState(0)
 
     const [data, setData] = useState([])
@@ -23,7 +23,7 @@ export default function App() {
         setTabState("home")
     }
     function handleBlog() {
-        setTabState("blog")
+        setCurrArticle(0)
     }
     function handleMusic() {
         setTabState("music")
@@ -66,25 +66,56 @@ export default function App() {
         }
     }    
 
-    function handleToggle(dataChild) {
-        setCurrArticle(dataChild); 
-    };
+    function handleChange(data) {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+        setCurrArticle(data)
+    }
+
+    function handleFilter(data) {
+        setFilter(data)
+    }
+
+    const filteredData = data.filter(d => (filter === "All" || d.type === filter))
 
     return (
         <div onAnimationEnd={() => setShowBlog(true)}>     
             {newTabState === "" ? <div className={tabState != "blog" ? 'fade-out' : ''} onAnimationEnd={handleNewTab}>
                 <Navbar home={handleHome} blog={handleBlog} music={handleMusic} gallery={handleGallery}/> 
                 {showBlog && !currArticle && <div>
-                    <Header/>
-                    <div className="blog-body">    
-                        {data.map((d, i) => (
-                            <BlogStart toggle={handleToggle} article={currArticle} key={i} ID={d.id} imgDir={d.img_dir} title={d.title} type={d.type} createdAt={d.createdAt}/>
+                    <Header handleFilter={handleFilter}/>
+                    <div className="blog-body">   
+                        {filteredData.map((d, i) => (
+                            <BlogStart 
+                                changeArticle={handleChange} 
+                                key={i} 
+                                ID={d.id} 
+                                imgDirThumbnail={d.img_dir1} 
+                                title={d.title} 
+                                type={d.type} 
+                                createdAt={d.createdAt}
+                            />
                         ))}
-                        {data.map((d, i) => (
-                            <BlogArticle key={i} ID={d.id} content={d.content} imgDir={d.img_dir} title={d.title} type={d.type} createdAt={d.createdAt}/>
-                        )).filter(d => d.id === currArticle)}
                     </div>
                 </div>}
+                {data.filter(d => d.id === currArticle).map((d, i) => (
+                    <BlogArticle 
+                        changeArticle={handleChange} 
+                        key={i} 
+                        ID={d.id} 
+                        content={d.content} 
+                        imgDir1={d.img_dir1} 
+                        imgDir2={d.img_dir2} 
+                        imgDir3={d.img_dir3} 
+                        imgDir4={d.img_dir4} 
+                        title={d.title} 
+                        type={d.type} 
+                        createdAt={d.createdAt}
+                    />
+                ))}
             </div> : null}
             {newTabState === "home" ? <div className="transition-container">
                 <div className="home-grow" onAnimationEnd={move}/>

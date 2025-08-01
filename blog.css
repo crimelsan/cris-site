@@ -226,6 +226,7 @@ body {
 .blog-item:hover {
     min-width: 30.5rem;
     min-height: 15rem;
+    cursor: pointer;
 }
 
 .blog-item > img {
@@ -260,3 +261,100 @@ body {
     font-size: 12px
 }
 
+.blog-article {
+    margin: 0rem 25rem;
+    font-family: "Lora";
+    display: flex;
+    flex-direction: column;
+}
+
+.article-header > h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin: 5rem 0 1rem;
+}
+
+.article-type {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.article-timestamp {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.article-header {
+    margin: 0 0 3rem;
+}
+
+.article-content {
+    white-space: pre;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.blog-article > img {
+    border-radius: 5rem;
+    border: .5rem solid #ffffff;
+    margin: 0 0 4rem;
+    width: 30rem;
+    align-self: center;
+}
+
+.back-button {
+    position: fixed;
+    top: 20;
+    background-color: #47474763;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 2.5rem 0 0 5rem;
+    border: .25rem solid #ffffff;
+    transition: transform 250ms ease-out;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.back-button > img {
+    width: 5rem;
+}
+
+select {
+  width: 8rem;
+  padding: .25rem;
+  border-radius: .25rem;
+  border: none;
+  font-size: 16px;
+  font-family: "Lora";
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+select:focus {
+  outline: none;
+}
+
+option {
+    font-size: 14px;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.error > p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.error > img {
+    width: 10rem;
+}
