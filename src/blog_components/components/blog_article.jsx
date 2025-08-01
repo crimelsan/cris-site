@@ -27,13 +27,13 @@ export default function BlogArticle(props) {
                         <p className="article-type">{props.type}</p>
                         <p className="article-timestamp">Made on: {convertDate(props.createdAt)}</p>
                     </div>
-                    <img src={props.imgDir1}/>
+                    <img src={`/assets/images/blog_imgs/${props.imgDir1}`}/>
                     <div className="article-content">
                         {props.content}
                     </div>
-                    {props.imgDir2 === "" ? <img src={props.imgDir2}/> : null}
-                    {props.imgDir3 === "" ? <img src={props.imgDir3}/> : null}
-                    {props.imgDir4 === "" ? <img src={props.imgDir4}/> : null}
+                    {props.imgDir2 === "" ? <img src={`/assets/images/blog_imgs/${props.imgDir2}`}/> : null}
+                    {props.imgDir3 === "" ? <img src={`/assets/images/blog_imgs/${props.imgDir3}`}/> : null}
+                    {props.imgDir4 === "" ? <img src={`/assets/images/blog_imgs/${props.imgDir4}`}/> : null}
                 </div>
             </div>
         </div>
