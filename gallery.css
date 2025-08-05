@@ -5,7 +5,7 @@
 
 body {
     background-color: #7994ff;
-    font-family: 'Barlow Condensed';
+    font-family: 'Roboto Slab';
 }
 
 .navbar {
@@ -152,4 +152,19 @@ body {
     } to {
         transform: scale(1) 
     }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    animation: fade-in 2s ease-in;
+}
+
+.header > h1 {
+    font-weight: 800;
+    font-size: 80px;
+    color: #ffffff;
+    font-family: 'Playwrite AU QLD';
 }

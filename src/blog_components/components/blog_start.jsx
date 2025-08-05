@@ -23,7 +23,7 @@ export default function BlogStart({changeArticle, type, imgDirThumbnail, title, 
 
     return(
         <button onClick={() => changeArticle(ID)} className={`blog-item ${determineBackground(type)}`}>
-            <img src={imgDirThumbnail}/>
+            <img src={`/assets/images/blog_imgs/${imgDirThumbnail}`}/>
             <div className="blog-content">
                 <h1>{title}</h1>
                 <div>

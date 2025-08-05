@@ -1,5 +1,6 @@
 import {useState } from "react"
 import Navbar from "../main_components/components/navbar.jsx"
+import Header from "./components/header.jsx"
 
 export default function App() {
     const [tabState, setTabState] = useState("gallery")
@@ -46,6 +47,7 @@ export default function App() {
         <>
             {newTabState === "" ? <div className={tabState != "gallery" ? 'fade-out' : ''} onAnimationEnd={handleNewTab}>
                 <Navbar home={handleHome} blog={handleBlog} music={handleMusic} gallery={handleGallery}/> 
+                <Header/>
             </div> : null}
             {newTabState === "blog" ? <div className="transition-container">
                 <div className="blog-grow" onAnimationEnd={move}/>
