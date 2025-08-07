@@ -19,7 +19,7 @@ export default function About() {
                 <a href="https://www.youtube.com/@randomdude2295" target="_blank"><img src="/assets/images/youtube.png"/></a>
                 <a href="https://bsky.app/profile/randomdude242.bsky.social" target="_blank"><img src="/assets/images/bluesky.png"/></a>
                 <a href="https://www.instagram.com/cris_santiago_5/" target="_blank"><img src="/assets/images/instagram.png"/></a>
-                <a href="https://www.linkedin.com/in/cris-santiago-7082a2330/" target="_blank"><img src="/assets/images/linkedin.png"/></a>
+                <a href="https://www.linkedin.com/in/cris-santiago-7082a2330/" target="_blank"><img src="/assets/images/linkedin.svg"/></a>
                 <a href="https://github.com/crimelsan" target="_blank"><img src="/assets/images/githubsvg.svg"/></a>
             </div>
         </div>

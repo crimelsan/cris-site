@@ -3,8 +3,8 @@ import MusicItem from "./music_item.jsx"
 
 export default function Body() {
     const [data, setData] = useState([])
-    const [ genreFilter, setGenreFilter] = useState("All")
-    const [ typeFilter, setTypeFilter] = useState("All")
+    const [genreFilter, setGenreFilter] = useState("All")
+    const [typeFilter, setTypeFilter] = useState("All")
     useEffect(() => {
         fetch('http://localhost:8008/musicdata')
         .then(res => res.json())
@@ -66,7 +66,7 @@ export default function Body() {
                         genre={d.genre} 
                         musicDir={d.music_dir} 
                         imgDir={d.img_dir} 
-                        description={d.descripton} 
+                        description={d.description} 
                         type={d.type} 
                     />
                 ))}
