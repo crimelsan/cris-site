@@ -6,7 +6,23 @@
 body {
     background-color: #7994ff;
     font-family: 'Roboto Slab';
+    background-image: url("/assets/images/clouds.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: 100vw;
+    animation: background-grow ease-out forwards;
+    animation-duration: 2s;
 }
+
+@keyframes background-grow {
+    from {
+        background-position: center -200%;
+    } to {
+        background-position: center bottom;
+    }
+}
+
 
 .navbar {
     display: flex;

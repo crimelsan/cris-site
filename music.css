@@ -6,7 +6,23 @@
 body {
     background-color: #351036;
     font-family: 'Google Sans Code';
+    background-image: url("/assets/gifs/disc-spinning.gif");
+    background-repeat: repeat-x;
+    background-position: center 160%;
+    background-attachment: fixed;
+    background-size: 40vw;
+    animation: background-grow ease-out forwards;
+    animation-duration: 2s;
 }
+
+@keyframes background-grow {
+    from {
+        background-position: -250% 310%;
+    } to {
+        background-position: center 160%;
+    }
+}
+
 
 .navbar {
     display: flex;
