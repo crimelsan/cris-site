@@ -86,7 +86,7 @@ export default function App() {
             {newTabState === "" ? <div className={tabState != "blog" ? 'fade-out' : ''} onAnimationEnd={handleNewTab}>
                 <Navbar home={handleHome} blog={handleBlog} music={handleMusic} gallery={handleGallery}/> 
                 {showBlog && !currArticle && <div>
-                    <Header handleFilter={handleFilter}/>
+                    <Header handleFilter={handleFilter} data={data}/>
                     <div className="blog-body">   
                         {filteredData.map((d, i) => (
                             <BlogStart 

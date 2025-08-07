@@ -1,4 +1,11 @@
 export default function Header(props) {
+    const types = []
+    props.data.forEach(d => {
+        if (!types.includes(d.type)) {
+            types.push(d.type)
+        }
+    })
+
     return (
         <div className="fade">
             <div className="header">
@@ -9,12 +16,11 @@ export default function Header(props) {
                 </p>
                 <select onChange={(e) => props.handleFilter(e.target.value)}>
                     <option value="All">All</option>
-                    <option value="General">General</option>           
+                    {types.map((type, i) => (
+                        <option key={i} value={type}>{type}</option>
+                    ))}      
                 </select> 
             </div>
         </div>
     )
 }
-
-//<option value="Music">Music</option>   
-//<option value="Spots">Spots</option>     
