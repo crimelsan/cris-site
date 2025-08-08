@@ -50,9 +50,9 @@ export default function Card() {
                                 maxWidth: "12rem",
                                 borderRadius: "50%",
                                 borderColor: "#474747",
-                                borderWidth: 8,
+                                borderWidth: ".5rem",
                                 borderStyle: "solid",
-                                margin: 2
+                                margin: ".5rem"
                             }}
                         />
                         <div className='text-container'>

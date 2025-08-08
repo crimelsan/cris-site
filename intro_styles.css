@@ -27,7 +27,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     background-color: #151515;
-    border-radius: 50px;
+    border-radius: 4rem;
     width: 80vw;
     max-width: 30rem;
     min-height: 12rem;
@@ -77,8 +77,8 @@ body {
     align-items: center;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 15px;
-    gap: 10px;
+    margin-bottom: 1rem;
+    gap: .75rem;
     font-family: 'Ubuntu';
 }
 
@@ -88,17 +88,18 @@ body {
     align-items: center;
     color: #ffffff;
     font-family: 'Ubuntu';
-    gap: 15px
+    text-align: center;
+    gap: 1rem
 }
 
 .intro-header {
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .intro-button-container > button {
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: .8rem 1.5rem;
+    border-radius: 1.5rem;
     font-family: 'Ubuntu';
     border: none;
     background-color: #ffffff;
@@ -107,10 +108,10 @@ body {
 
 .intro-button-container > button:hover {
     cursor: pointer;
-    padding: 15px 25px;
-    border-radius: 25px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
     background-color: #ededed;
-    font-size: 14px;
+    font-size: .9rem;
 }
 
 .fade-out {
