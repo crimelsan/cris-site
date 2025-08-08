@@ -46,12 +46,13 @@ export default function Card() {
                         <img 
                             src="/assets/images/card-profile.jpg"
                             style={{
-                                width: "12rem",
+                                width: "30vw",
+                                maxWidth: "12rem",
                                 borderRadius: "50%",
                                 borderColor: "#474747",
                                 borderWidth: 8,
                                 borderStyle: "solid",
-                                margin: 0
+                                margin: 2
                             }}
                         />
                         <div className='text-container'>
