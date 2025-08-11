@@ -4,6 +4,15 @@ export default function BlogStart({changeArticle, type, imgDirThumbnail, title, 
         switch(type) {
             case "General": return "general";
                 break;
+            case "Music": return "music";
+                break;
+            case "Spots": return "spots";
+                break;
+            case "Cooking": return "cooking";
+                break;
+            case "Video Games": return "video-games";
+                break;
+            case "Screen Media": return "screen-media";
             default: return ""
         }
     }

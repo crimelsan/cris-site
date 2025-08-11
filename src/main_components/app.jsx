@@ -3,7 +3,7 @@ import Head from "./components/header.jsx"
 import Navbar from "./components/navbar.jsx"
 import About from "./components/about.jsx"
 import Projects from "./components/projects.jsx"
-
+import Footer from "./components/footer.jsx"
 
 export default function App() {
     const [tabState, setTabState] = useState("home")
@@ -69,6 +69,7 @@ export default function App() {
                 <Navbar home={handleHome} blog={handleBlog} music={handleMusic} gallery={handleGallery}/>
                 <About/>
                 <Projects/>
+                <Footer/>
             </div> : null}
             {newTabState === "blog" ? <div className="transition-container">
                 <div className="blog-grow" onAnimationEnd={move}/>
