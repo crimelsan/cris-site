@@ -24,7 +24,7 @@ export default function Card() {
     }
 
     function moveToMain() {
-        window.location.href = "/main.html"
+        window.location.href = "./main.html"
     }
 
     return (
@@ -44,7 +44,7 @@ export default function Card() {
                     <div className={`card ${disappearCard ? 'animate-disappear' : ''}`}
                         onAnimationEnd={() => setTransition(true)}>
                         <img 
-                            src="/assets/images/card-profile.jpg"
+                            src="./assets/images/card-profile.jpg"
                             style={{
                                 width: "30vw",
                                 maxWidth: "12rem",

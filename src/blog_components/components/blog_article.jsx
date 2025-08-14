@@ -1,4 +1,5 @@
 import { useState } from "react"
+import parse from "html-react-parser"
 
 export default function BlogArticle(props) {
     const [hideArticle, setHideArticle] = useState(false)
@@ -29,11 +30,8 @@ export default function BlogArticle(props) {
                     </div>
                     <img src={`/assets/images/blog_imgs/${props.imgDir1}`}/>
                     <div className="article-content">
-                        {props.content}
+                        {parse(props.content)}
                     </div>
-                    {props.imgDir2 === "" ? <img src={`/assets/images/blog_imgs/${props.imgDir2}`}/> : null}
-                    {props.imgDir3 === "" ? <img src={`/assets/images/blog_imgs/${props.imgDir3}`}/> : null}
-                    {props.imgDir4 === "" ? <img src={`/assets/images/blog_imgs/${props.imgDir4}`}/> : null}
                 </div>
             </div>
         </div>

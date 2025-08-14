@@ -107,10 +107,7 @@ export default function App() {
                         key={i} 
                         ID={d.id} 
                         content={d.content} 
-                        imgDir1={d.img_dir1} 
-                        imgDir2={d.img_dir2} 
-                        imgDir3={d.img_dir3} 
-                        imgDir4={d.img_dir4} 
+                        imgDir1={d.img_dir1}
                         title={d.title} 
                         type={d.type} 
                         createdAt={d.createdAt}
