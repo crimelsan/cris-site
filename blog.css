@@ -250,6 +250,46 @@ body {
     border: 0.5rem solid #156acc;
 }
 
+.music {
+    background: #a701b6;
+}
+
+.music > img {
+    border: 0.5rem solid #80008b;
+}
+
+
+.spots {
+    background: #e98a1d;
+}
+
+.spots > img {
+    border: 0.5rem solid #db811a;
+}
+
+.cooking {
+    background: #c8f110;
+}
+
+.cooking > img {
+    border: 0.5rem solid #b4da0d;
+}
+
+.video-games {
+    background: #10f175;
+}
+
+.video-games > img {
+    border: 0.5rem solid #0fdb6b;
+}
+
+.screen-media {
+    background: #f32865;
+}
+
+.screen-media > img {
+    border: 0.5rem solid #f11053;
+}
 
 .type {
     font-size: 20px;
