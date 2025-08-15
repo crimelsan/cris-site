@@ -6,7 +6,7 @@ export default function Body() {
     const [genreFilter, setGenreFilter] = useState("All")
     const [typeFilter, setTypeFilter] = useState("All")
     useEffect(() => {
-        fetch('http://localhost:8008/musicdata')
+        fetch('https://cris-site-bafbc409d299.herokuapp.com/musicdata')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(err => console.log(err))   

@@ -4,7 +4,7 @@ import PhotoItem from "./photo_item.jsx"
 export default function Body() {
     const [data, setData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:8008/photodata')
+        fetch('https://cris-site-bafbc409d299.herokuapp.com/photodata')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(err => console.log(err))   

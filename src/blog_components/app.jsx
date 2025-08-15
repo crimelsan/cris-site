@@ -13,7 +13,7 @@ export default function App() {
 
     const [data, setData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:8008/blogdata')
+        fetch('https://cris-site-bafbc409d299.herokuapp.com/blogdata')
         .then(res => res.json())
         .then(data => setData(data))
         .catch(err => console.log(err))   
