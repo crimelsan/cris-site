@@ -12,7 +12,7 @@ export default function Body() {
 
     return (
         <div className="body-container">
-        {data.map((d,i) => (
+        {data.reverse().map((d,i) => (
             <PhotoItem
                 key={i}
                 ID={d.id}

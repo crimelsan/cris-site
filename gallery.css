@@ -209,7 +209,7 @@ body {
 .photo-content {
     flex-basis: 25%;
     padding: 4rem 6rem 2rem;
-    background-color: #4547c03b;
+    background-color: #4547c0a1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,4 +244,5 @@ body {
     margin: 1rem 0 0;
     color: #ffffff;
     font-size: 16px;
+    text-align: center;
 }

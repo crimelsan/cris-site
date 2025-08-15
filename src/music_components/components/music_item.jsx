@@ -62,11 +62,13 @@ export default function MusicItem(props) {
     return (
         <div className="music-content" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
             <div className="main-content">
-                <img className="music-cover" src={`./assets/images/music_imgs/${props.imgDir}`}/>
-                <div className="music-text">
-                    <span>Title: {props.title}</span>
-                    <span>Song-Type: {props.type}</span>
-                    <span>Genre: {props.genre}</span>
+                <div className="info-container">
+                    <img className="music-cover" src={`./assets/images/music_imgs/${props.imgDir}`}/>
+                    <div className="music-text">
+                        <span>Title: {props.title}</span>
+                        <span>Song-Type: {props.type}</span>
+                        <span>Genre: {props.genre}</span>
+                    </div>
                 </div>
                 <div className="audio-control">
                     <input

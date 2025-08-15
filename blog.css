@@ -336,6 +336,7 @@ body {
     margin: 2rem;
     font-size: 25px;
     font-weight: 500;
+    gap: 2rem;
 }
 
 .blog-article > img {

@@ -257,7 +257,8 @@ option {
     width: 8rem;
     height: 8rem;
     border-radius: 1rem;
-    border: .5rem solid #ffffff
+    border: .5rem solid #ffffff;
+    object-fit: cover;
 }
 
 .main-content {
@@ -265,6 +266,14 @@ option {
     flex-direction: row;
     gap: 3rem;
     align-items: center;
+    justify-content: space-between;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
 }
 
 .music-text {

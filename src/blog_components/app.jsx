@@ -79,7 +79,7 @@ export default function App() {
         setFilter(data)
     }
 
-    const filteredData = data.filter(d => (filter === "All" || d.type === filter))
+    const filteredData = data.filter(d => (filter === "All" || d.type === filter)).reverse()
 
     return (
         <div onAnimationEnd={() => setShowBlog(true)}>     

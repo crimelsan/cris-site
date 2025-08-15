@@ -25,7 +25,7 @@ export default function Body() {
         }
     })
 
-    const filteredData = data.filter(d => ((typeFilter === "All" || d.type === typeFilter) && (genreFilter === "All" || d.genre === genreFilter)))
+    const filteredData = data.filter(d => ((typeFilter === "All" || d.type === typeFilter) && (genreFilter === "All" || d.genre === genreFilter))).reverse()
 
     function handleGenreFilter(genre) {
         setGenreFilter(genre)
