@@ -8,6 +8,14 @@ export default function MusicItem(props) {
 
     const audioRef = useRef(null)
 
+    function getImgURL(image) {
+        return new URL(`../../assets/images/music_imgs/${image}`, import.meta.url).href;
+    }
+
+    function getAudioURL(audio) {
+        return new URL(`../../assets/audio/music/${audio}`, import.meta.url).href;
+    }
+
     function showDescription() {
         setDisplayDescription(true)
     }
@@ -63,7 +71,7 @@ export default function MusicItem(props) {
         <div className="music-content" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
             <div className="main-content">
                 <div className="info-container">
-                    <img className="music-cover" src={`/assets/images/music_imgs/${props.imgDir}`}/>
+                    <img className="music-cover" src={getImgURL(props.imgDir)}/>
                     <div className="music-text">
                         <span>Title: {props.title}</span>
                         <span>Song-Type: {props.type}</span>
@@ -78,7 +86,7 @@ export default function MusicItem(props) {
                         value={currentTime}
                         onChange={handleSeek}
                     />
-                    <audio ref={audioRef} src={`/assets/audio/music/${props.musicDir}`}/>
+                    <audio ref={audioRef} src={getMusicURL(props.musicDir)}/>
                     <div className="duration-tracker">
                         <p>{formatTime(currentTime)}</p>
                         <p>{formatTime(duration)}</p>

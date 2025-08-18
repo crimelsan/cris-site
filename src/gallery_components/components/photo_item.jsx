@@ -1,4 +1,8 @@
 export default function PhotoItem(props) {
+    function getURL(image) {
+        return new URL(`../../assets/images/gallery_imgs/${image}`, import.meta.url).href;
+    }
+
     function convertDate(date) {
         const monthList = ['January','Febuary','March','April','May','June','July','August','September','October','November','December']
 
@@ -13,7 +17,7 @@ export default function PhotoItem(props) {
 
     return (
         <div className="photo-content">
-            <img src={`/assets/images/gallery_imgs/${props.imgDir}`}/>
+            <img src={getURL(props.imgDir)}/>
             <span className="title">"{props.title}"</span>
             <div className="descriptors">
                 <span>Taken On: {convertDate(props.takenOn)}</span>

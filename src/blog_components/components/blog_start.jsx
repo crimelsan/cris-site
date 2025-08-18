@@ -1,5 +1,9 @@
 export default function BlogStart({changeArticle, type, imgDirThumbnail, title, createdAt, ID}) {
 
+    function getURL(image) {
+        return new URL(`../../assets/images/blog_imgs/${image}`, import.meta.url).href;
+    }
+
     function determineBackground(type) {
         switch(type) {
             case "General": return "general";
@@ -32,7 +36,7 @@ export default function BlogStart({changeArticle, type, imgDirThumbnail, title, 
 
     return(
         <button onClick={() => changeArticle(ID)} className={`blog-item ${determineBackground(type)}`}>
-            <img src={`/assets/images/blog_imgs/${imgDirThumbnail}`}/>
+            <img src={getURL(imgDirThumbnail)}/>
             <div className="blog-content">
                 <h1>{title}</h1>
                 <div>

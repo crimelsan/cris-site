@@ -4,6 +4,10 @@ import parse from "html-react-parser"
 export default function BlogArticle(props) {
     const [hideArticle, setHideArticle] = useState(false)
 
+    function getURL(image) {
+        return new URL(`../../assets/images/blog_imgs/${image}`, import.meta.url).href;
+    }
+
     function convertDate(date) {
         const monthList = ['Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec']
 
@@ -28,7 +32,7 @@ export default function BlogArticle(props) {
                         <p className="article-type">{props.type}</p>
                         <p className="article-timestamp">Made on: {convertDate(props.createdAt)}</p>
                     </div>
-                    <img src={`/assets/images/blog_imgs/${props.imgDir1}`}/>
+                    <img src={getURL(props.imgDir1)}/>
                     <div className="article-content">
                         {parse(props.content)}
                     </div>
