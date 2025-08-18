@@ -12,7 +12,7 @@ export default defineConfig({
         main: resolve(__dirname, 'main.html'), 
         blog: resolve(__dirname, 'blog.html'),
         music: resolve(__dirname, 'music.html'),
-        gallery: resolve(__dirname, 'blog.html')
+        gallery: resolve(__dirname, 'gallery.html')
       },
     },
   },
