@@ -6,13 +6,13 @@ export default function Projects() {
         <>
             <div className="project-container">
                 <div className="project-head">
-                    <img src="/src/assets/images/construction-cone.png"/>
-                    <img src="/src/assets/images/construction-cone.png"/>
+                    <img src="/assets/images/construction-cone.png"/>
+                    <img src="/assets/images/construction-cone.png"/>
                     <h1 style={{
                         fontSize: "60px"
                     }}>PROJECTS</h1>
-                    <img src="/src/assets/images/construction-cone.png"/>
-                    <img src="/src/assets/images/construction-cone.png"/>
+                    <img src="/assets/images/construction-cone.png"/>
+                    <img src="/assets/images/construction-cone.png"/>
                 </div>
                 <hr style={{width: "250px", border: "2px solid #fff"}}></hr>
                 <div className="project-body">
@@ -61,9 +61,9 @@ export default function Projects() {
                     </span>
                 </div>
                 <div>
-                    <img src="./assets/gifs/construction2.gif"/>
-                    <img src="./assets/gifs/construction2.gif"/>
-                    <img src="./assets/gifs/construction2.gif"/>
+                    <img src="/assets/gifs/construction2.gif"/>
+                    <img src="/assets/gifs/construction2.gif"/>
+                    <img src="/assets/gifs/construction2.gif"/>
                 </div>
             </div>
         </>

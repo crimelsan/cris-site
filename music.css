@@ -6,7 +6,7 @@
 body {
     background-color: #351036;
     font-family: 'Google Sans Code';
-    background-image: url("/src/assets/gifs/disc-spinning.gif");
+    background-image: url("/assets/gifs/disc-spinning.gif");
     background-repeat: repeat-x;
     background-position: center 160%;
     background-attachment: fixed;
@@ -136,7 +136,7 @@ body {
 }
 
 .home-grow {
-    background-image: url("/src/assets/images/home-background.png");
+    background-image: url("/assets/images/home-background.png");
     position: fixed;
     padding: 1600px 1600px;
     transform: scale(0);
@@ -145,7 +145,7 @@ body {
 }
 
 .blog-grow {
-    background-image: url("/src/assets/images/blog-background.png");
+    background-image: url("/assets/images/blog-background.png");
     position: fixed;
     padding: 1600px 1600px;
     transform: scale(0);
@@ -154,7 +154,7 @@ body {
 }
 
 .gallery-grow {
-    background-image: url("/src/assets/images/gallery-background.png");
+    background-image: url("/assets/images/gallery-background.png");
     position: fixed;
     padding: 1600px 1600px;
     transform: scale(0);

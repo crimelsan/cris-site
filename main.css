@@ -381,7 +381,7 @@ body {
 }
 
 .blog-grow {
-    background-image: url("/src/assets/images/blog-background.png");
+    background-image: url("/assets/images/blog-background.png");
     position: fixed;
     padding: 1600px 1600px;
     transform: scale(0);
@@ -390,7 +390,7 @@ body {
 }
 
 .music-grow {
-    background-image: url("/src/assets/images/music-background.png");
+    background-image: url("/assets/images/music-background.png");
     position: fixed;
     padding: 1600px 1600px;
     transform: scale(0);
@@ -399,7 +399,7 @@ body {
 }
 
 .gallery-grow {
-    background-image: url("/src/assets/images/gallery-background.png");
+    background-image: url("/assets/images/gallery-background.png");
     position: fixed;
     padding: 1600px 1600px;
     transform: scale(0);

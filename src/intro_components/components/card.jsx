@@ -44,7 +44,7 @@ export default function Card() {
                     <div className={`card ${disappearCard ? 'animate-disappear' : ''}`}
                         onAnimationEnd={() => setTransition(true)}>
                         <img 
-                            src="/src/assets/images/card-profile.jpg"
+                            src="/assets/images/card-profile.jpg"
                             style={{
                                 width: "30vw",
                                 maxWidth: "12rem",
