@@ -13,7 +13,7 @@ export default function MusicItem(props) {
     }
 
     function getPauseURL(state) {
-        return new URL(`/assets/images/${state ? "pause" : "play"}.png`, import.meta.url).href;
+        return new URL(`../../assets/images/${state ? "pause" : "play"}.png`, import.meta.url).href;
     }
 
     function getAudioURL(audio) {
