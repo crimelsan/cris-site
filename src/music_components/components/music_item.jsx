@@ -12,6 +12,10 @@ export default function MusicItem(props) {
         return new URL(`../../assets/images/music_imgs/${image}`, import.meta.url).href;
     }
 
+    function getPauseURL(state) {
+        return new URL(`/assets/images/${state ? "pause" : "play"}.png`, import.meta.url).href;
+    }
+
     function getAudioURL(audio) {
         return new URL(`../../assets/audio/music/${audio}`, import.meta.url).href;
     }
@@ -92,7 +96,7 @@ export default function MusicItem(props) {
                         <p>{formatTime(duration)}</p>
                     </div>
                     <button onClick={handlePausePlay}>
-                        <img src={`/assets/images/${isPlaying ? "pause" : "play"}.png`}/>
+                        <img src={getPauseURL(isPlaying)}/>
                     </button>
                 </div>
             </div>
