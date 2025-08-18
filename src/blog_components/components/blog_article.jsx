@@ -1,5 +1,6 @@
 import { useState } from "react"
 import parse from "html-react-parser"
+import Arrow from "../../assets/images/back-arrow.png"
 
 export default function BlogArticle(props) {
     const [hideArticle, setHideArticle] = useState(false)
@@ -24,7 +25,7 @@ export default function BlogArticle(props) {
         <div className="fade">
             <div className={`${hideArticle ? "fade-out" : ""}`} onAnimationEnd={() => props.changeArticle(0)}>
                 <button onClick={() => setHideArticle(true)} className="back-button">
-                    <img src="/assets/images/back-arrow.png"/>
+                    <img src={Arrow}/>
                 </button>
                 <div className="blog-article">
                     <div className="article-header">
