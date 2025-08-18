@@ -1,4 +1,8 @@
 export default function ProjectItem(props) {
+    function getURL(image) {
+        return new URL(`/src/assets/images/project_imgs/${image}`, import.meta.url).href;
+    }
+
 
     function checkColor(status) {
         if (status === "Complete") {
@@ -19,7 +23,7 @@ export default function ProjectItem(props) {
                 <h2>
                     Current Status: <span style={{color: checkColor(props.status)}}>{props.status}</span>
                 </h2>
-                {props.img ? <img src={`/src/assets/images/project_imgs/${props.img}`}/> : null}
+                {props.img ? <img src={getURL(props.img)}/> : null}
                 <p style={{fontSize: "20px", margin: "1.5rem 0rem"}}>
                     {props.description}
                 </p>
