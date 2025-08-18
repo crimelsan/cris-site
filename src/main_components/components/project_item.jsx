@@ -1,6 +1,6 @@
 export default function ProjectItem(props) {
     function getURL(image) {
-        return new URL(`/src/assets/images/project_imgs/${image}`, import.meta.url).href;
+        return new URL(`../../assets/images/project_imgs/${image}`, import.meta.url).href;
     }
 
 
