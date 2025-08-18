@@ -6,7 +6,7 @@ export default function About() {
             }}>ABOUT</h1>
             <hr style={{width: "200px", border: "2px solid #fff"}}></hr>
             <div className="about-body">
-                <img src="/assets/images/about-profile.png"/>
+                <img src="../../assets/images/about-profile.png"/>
                 <span>
                     Hi, I'm Cris Santiago, and I would like to say, thank you for visiting my site! I am a Computer Science major with a concentration 
                     in Software Engineering who is currently attending UIC on his sophomore year. <br/><br/>
