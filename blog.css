@@ -5,7 +5,7 @@
 
 body {
     background-color: #72DFC0;
-    background-image: url("/assets/images/blog-paper-background.png");
+    background-image: url("/src/assets/images/blog-paper-background.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
@@ -157,7 +157,7 @@ body {
 }
 
 .home-grow {
-    background-image: url("/assets/images/home-background.png");
+    background-image: url("/src/assets/images/home-background.png");
     position: fixed;
     padding: 1600px 1600px;
     transform: scale(0);
@@ -166,7 +166,7 @@ body {
 }
 
 .music-grow {
-    background-image: url("/assets/images/music-background.png");
+    background-image: url("/src/assets/images/music-background.png");
     position: fixed;
     padding: 1600px 1600px;
     transform: scale(0);
@@ -175,7 +175,7 @@ body {
 }
 
 .gallery-grow {
-    background-image: url("/assets/images/gallery-background.png");
+    background-image: url("/src/assets/images/gallery-background.png");
     position: fixed;
     padding: 1600px 1600px;
     transform: scale(0);

@@ -1,4 +1,5 @@
 import React from "react"
+import Profile from "../../assets/images/card-profile.jpg"
 
 export default function Card() {
     const [showCard, setShowCard] = React.useState(false)
@@ -44,7 +45,7 @@ export default function Card() {
                     <div className={`card ${disappearCard ? 'animate-disappear' : ''}`}
                         onAnimationEnd={() => setTransition(true)}>
                         <img 
-                            src="/assets/images/card-profile.jpg"
+                            src={Profile}
                             style={{
                                 width: "30vw",
                                 maxWidth: "12rem",

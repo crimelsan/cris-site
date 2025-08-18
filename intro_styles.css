@@ -36,7 +36,7 @@ body {
     padding: 1.2rem;
     gap: 0rem;
     box-shadow: 0 0 10px #151515;
-    background-image: url("/assets/images/card-background.png");
+    background-image: url("/src/assets/images/card-background.png");
     transition: transform 50ms linear;
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 .circle-shrink {
-    background-image: url("/assets/images/background.png");
+    background-image: url("/src/assets/images/background.png");
     position: fixed;
     padding: 1600px 1600px;
     transform: scale(0);
