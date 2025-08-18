@@ -1,4 +1,6 @@
 import ProjectItem from "./project_item.jsx"
+import Cone from "../../assets/images/construction-cone.png"
+import Engineer from "../../assets/gifs/construction2.gif"
 
 export default function Projects() {
 
@@ -6,13 +8,13 @@ export default function Projects() {
         <>
             <div className="project-container">
                 <div className="project-head">
-                    <img src="/assets/images/construction-cone.png"/>
-                    <img src="/assets/images/construction-cone.png"/>
+                    <img src={Cone}/>
+                    <img src={Cone}/>
                     <h1 style={{
                         fontSize: "60px"
                     }}>PROJECTS</h1>
-                    <img src="/assets/images/construction-cone.png"/>
-                    <img src="/assets/images/construction-cone.png"/>
+                    <img src={Cone}/>
+                    <img src={Cone}/>
                 </div>
                 <hr style={{width: "250px", border: "2px solid #fff"}}></hr>
                 <div className="project-body">
@@ -61,9 +63,9 @@ export default function Projects() {
                     </span>
                 </div>
                 <div>
-                    <img src="/assets/gifs/construction2.gif"/>
-                    <img src="/assets/gifs/construction2.gif"/>
-                    <img src="/assets/gifs/construction2.gif"/>
+                    <img src={Engineer}/>
+                    <img src={Engineer}/>
+                    <img src={Engineer}/>
                 </div>
             </div>
         </>

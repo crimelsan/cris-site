@@ -1,3 +1,10 @@
+import Profile from "../../assets/images/about-profile.png"
+import Youtube from "../../assets/images/youtube.png"
+import Bluesky from "../../assets/images/bluesky.png"
+import Instagram from "../../assets/images/instagram.png"
+import Linkedin from "../../assets/images/linkedin.svg"
+import Github from "../../assets/images/github.svg"
+
 export default function About() {
     return(
         <div className="about-container">
@@ -6,7 +13,7 @@ export default function About() {
             }}>ABOUT</h1>
             <hr style={{width: "200px", border: "2px solid #fff"}}></hr>
             <div className="about-body">
-                <img src="../../assets/images/about-profile.png"/>
+                <img src={Profile}/>
                 <span>
                     Hi, I'm Cris Santiago, and I would like to say, thank you for visiting my site! I am a Computer Science major with a concentration 
                     in Software Engineering who is currently attending UIC on his sophomore year. <br/><br/>
@@ -16,11 +23,11 @@ export default function About() {
                 </span>
             </div>
             <div className="link-container">
-                <a href="https://www.youtube.com/@randomdude2295" target="_blank"><img src="/assets/images/youtube.png"/></a>
-                <a href="https://bsky.app/profile/randomdude242.bsky.social" target="_blank"><img src="/assets/images/bluesky.png"/></a>
-                <a href="https://www.instagram.com/cris_santiago_5/" target="_blank"><img src="/assets/images/instagram.png"/></a>
-                <a href="https://www.linkedin.com/in/cris-santiago-7082a2330/" target="_blank"><img src="/assets/images/linkedin.svg"/></a>
-                <a href="https://github.com/crimelsan" target="_blank"><img src="/assets/images/githubsvg.svg"/></a>
+                <a href="https://www.youtube.com/@randomdude2295" target="_blank"><img src={Youtube}/></a>
+                <a href="https://bsky.app/profile/randomdude242.bsky.social" target="_blank"><img src={Bluesky}/></a>
+                <a href="https://www.instagram.com/cris_santiago_5/" target="_blank"><img src={Instagram}/></a>
+                <a href="https://www.linkedin.com/in/cris-santiago-7082a2330/" target="_blank"><img src={Linkedin}/></a>
+                <a href="https://github.com/crimelsan" target="_blank"><img src={Github}/></a>
             </div>
         </div>
     )
