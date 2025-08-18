@@ -86,7 +86,7 @@ export default function MusicItem(props) {
                         value={currentTime}
                         onChange={handleSeek}
                     />
-                    <audio ref={audioRef} src={getMusicURL(props.musicDir)}/>
+                    <audio ref={audioRef} src={getAudioURL(props.musicDir)}/>
                     <div className="duration-tracker">
                         <p>{formatTime(currentTime)}</p>
                         <p>{formatTime(duration)}</p>
