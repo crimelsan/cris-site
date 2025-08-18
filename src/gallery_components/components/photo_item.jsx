@@ -13,7 +13,7 @@ export default function PhotoItem(props) {
 
     return (
         <div className="photo-content">
-            <img src={`/assets/images/gallery_imgs/${props.imgDir}`}/>
+            <img src={`/src/assets/images/gallery_imgs/${props.imgDir}`}/>
             <span className="title">"{props.title}"</span>
             <div className="descriptors">
                 <span>Taken On: {convertDate(props.takenOn)}</span>

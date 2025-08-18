@@ -63,7 +63,7 @@ export default function MusicItem(props) {
         <div className="music-content" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
             <div className="main-content">
                 <div className="info-container">
-                    <img className="music-cover" src={`./assets/images/music_imgs/${props.imgDir}`}/>
+                    <img className="music-cover" src={`/src/assets/images/music_imgs/${props.imgDir}`}/>
                     <div className="music-text">
                         <span>Title: {props.title}</span>
                         <span>Song-Type: {props.type}</span>
@@ -78,13 +78,13 @@ export default function MusicItem(props) {
                         value={currentTime}
                         onChange={handleSeek}
                     />
-                    <audio ref={audioRef} src={`./assets/audio/music/${props.musicDir}`}/>
+                    <audio ref={audioRef} src={`/src/assets/audio/music/${props.musicDir}`}/>
                     <div className="duration-tracker">
                         <p>{formatTime(currentTime)}</p>
                         <p>{formatTime(duration)}</p>
                     </div>
                     <button onClick={handlePausePlay}>
-                        <img src={`assets/images/${isPlaying ? "pause" : "play"}.png`}/>
+                        <img src={`/src/assets/images/${isPlaying ? "pause" : "play"}.png`}/>
                     </button>
                 </div>
             </div>
