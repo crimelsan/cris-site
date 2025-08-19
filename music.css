@@ -316,6 +316,7 @@ option {
     display: flex;
     flex-direction: row;
     justify-self: center;
+    align-self: center;
 }
 
 input[type="range"] {
@@ -338,7 +339,5 @@ input[type="range"] {
     .main-content {
         flex-direction: column;
     }
-    .audio-control > button {
-        flex-direction: column;
-    }
+
 }
