@@ -241,11 +241,13 @@ body {
     background-color: #000000;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-self: center;
     min-width: 20rem;
     align-items: center;
     border-radius: 2rem;
     gap: 1.5rem;
+    max-width: 100%;
+    width: 50rem
 }
 
 .about-body {
@@ -262,10 +264,6 @@ body {
     border-radius: 25%;
     border: 1rem solid #474747;
     transition: width 250ms ease-out;
-}
-
-.about-body > img:hover {
-    width: 16rem
 }
 
 .about-body > span {
@@ -302,9 +300,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-self: center;
     border-radius: 2rem;
     gap: 1.5rem;
+    width: 70rem;
+    max-width: 100%;
 }
 
 .project-body {
@@ -314,6 +314,7 @@ body {
     align-items: center;
     gap: 2rem;
     margin: 0 11rem;
+    max-width: 100%;
 }
 
 .project-body > span {
@@ -335,6 +336,10 @@ body {
     height: 5rem;
 }
 
+.project-item-content > h2 {
+    margin: 0 0 1rem;
+}
+
 .project-item {
     display: flex;
     flex-direction: row;
@@ -342,6 +347,7 @@ body {
     width: 80rem;
     margin: 1rem 0rem;
     gap: 5rem;
+    max-width: 100%;
 }
 
 .project-item-content {
@@ -426,6 +432,7 @@ body {
     background-color: #000000;
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
+    text-align: center;
 }
 
 .footer > p {
