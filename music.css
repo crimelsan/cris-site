@@ -304,7 +304,6 @@ option {
 .audio-control > button > img {
     width: 2rem;
     transition: transform 150ms ease-out;
-    justify-self: center;
 }
 
 .audio-control > button > img:hover {
@@ -340,5 +339,12 @@ input[type="range"] {
     .main-content {
         flex-direction: column;
     }
-
+    .audio-control > button {
+        border: none;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-self: center;
+    }
 }
