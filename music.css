@@ -338,4 +338,7 @@ input[type="range"] {
     .main-content {
         flex-direction: column;
     }
+    .audio-control > button {
+        flex-direction: column;
+    }
 }
