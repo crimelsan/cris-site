@@ -304,6 +304,7 @@ option {
 .audio-control > button > img {
     width: 2rem;
     transition: transform 150ms ease-out;
+    justify-self: center;
 }
 
 .audio-control > button > img:hover {
