@@ -39,6 +39,7 @@ body {
     letter-spacing: .2rem;
     text-align: center;
     animation: fade-in ease-in-out;
+    margin: .5rem;
 }
 
 .head-text > span {
