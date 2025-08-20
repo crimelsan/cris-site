@@ -309,6 +309,10 @@ body {
     font-family: "Lora";
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    min-width: 20rem;
+    width: 50vw;
+    max-width: 100%;
 }
 
 .article-header > h1 {
@@ -332,11 +336,11 @@ body {
 }
 
 .article-content {
+    justify-content: center;
     display: flex;
     flex-direction: column;
     width: 65rem;
-    white-space: pre-wrap;
-    margin: 2rem;
+    max-width: 100%;
     font-size: 25px;
     font-weight: 500;
     gap: 2rem;
@@ -346,7 +350,7 @@ body {
     border-radius: 5rem;
     border: .5rem solid #ffffff;
     margin: 0 0 4rem;
-    width: 30rem;
+    width: 15rem;
     align-self: center;
 }
 
@@ -407,3 +411,4 @@ option {
     border-radius: 5rem;
     border: .5rem solid #ffffff;
 }
+

@@ -343,7 +343,7 @@ input[type="range"] {
         border: none;
         background: none;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-self: center;
         align-self: center;
     }
