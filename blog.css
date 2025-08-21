@@ -305,7 +305,6 @@ body {
 }
 
 .blog-article {
-    margin: 0rem 25rem;
     font-family: "Lora";
     display: flex;
     flex-direction: column;
@@ -361,7 +360,7 @@ body {
     background-color: #47474763;
     border-radius: 1rem;
     padding: .5rem;
-    margin: 2.5rem 0 0 5rem;
+    margin: 2.5rem 0 0 -20rem;
     border: .25rem solid #ffffff;
     transition: transform 250ms ease-out;
 }
