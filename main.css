@@ -314,7 +314,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin: 0 11rem;
     max-width: 100%;
 }
 
@@ -426,7 +425,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    margin: 0 0rem;
     padding: 4rem;
     justify-self: center;
     align-items: center;
