@@ -59,7 +59,7 @@ export default function App() {
     }
 
     return (
-        <div className="main">
+        <>
             {newTabState === "" ? <div className={tabState != "home" ? 'fade-out' : ''} onAnimationEnd={handleNewTab}>
                 <Head/>
                 <div style={{
@@ -80,7 +80,7 @@ export default function App() {
             {newTabState === "gallery" ? <div className="transition-container">
                 <div className="gallery-grow" onAnimationEnd={move}/>
             </div>: null}
-        </div>
+        </>
 
     )
 }
