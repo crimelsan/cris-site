@@ -236,7 +236,7 @@ body {
 }
 
 .about-container {
-    margin: 1rem 20rem 5rem;
+    margin: 1rem 0 5rem;
     padding: 4rem 5rem;
     color: #ffffff;
     background-color: #000000;
@@ -257,7 +257,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin: 0 11rem;
+    margin: 0 12rem;
 }
 
 .about-body > img {
