@@ -459,3 +459,7 @@ a {
         flex-direction: column;
     }
 }
+
+.main {
+    justify-content: center;
+}
