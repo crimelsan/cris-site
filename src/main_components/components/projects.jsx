@@ -5,7 +5,7 @@ import Engineer from "../../assets/gifs/construction2.gif"
 export default function Projects() {
 
     return (
-        <>
+        <div className="center">
             <div className="project-container">
                 <div className="project-head">
                     <img src={Cone}/>
@@ -68,6 +68,6 @@ export default function Projects() {
                     <img src={Engineer}/>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
