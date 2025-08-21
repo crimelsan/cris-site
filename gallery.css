@@ -266,17 +266,3 @@ body {
         width: 40rem;
     }
 }
-
-@media screen and (max-width: 1200px) {
-    body {
-        background-size: 200vh;
-    }
-
-    @keyframes background-grow {
-        from {
-            background-position: center -250%;
-        } to {
-            background-position: center bottom;
-        }
-    }
-}

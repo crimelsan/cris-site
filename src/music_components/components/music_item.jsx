@@ -95,7 +95,7 @@ export default function MusicItem(props) {
                         <p>{formatTime(currentTime)}</p>
                         <p>{formatTime(duration)}</p>
                     </div>
-                    <button onClick={handlePausePlay}>
+                    <button onClick={handlePausePlay} className="center">
                         <img src={getPauseURL(isPlaying)}/>
                     </button>
                 </div>
