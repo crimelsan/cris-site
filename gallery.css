@@ -252,12 +252,13 @@ body {
 
 @media screen and (max-width: 1000px) {
     body {
+        background-position: absolute;
         background-size: 200vh;
     }
 
     @keyframes background-grow {
         from {
-            background-position: center -250%;
+            background-position: center 220vh;
         } to {
             background-position: center bottom;
         }
