@@ -22,20 +22,22 @@ export default function BlogArticle(props) {
     }
 
     return(
-        <div className="fade">
-            <div className={`${hideArticle ? "fade-out" : ""}`} onAnimationEnd={() => props.changeArticle(0)}>
-                <button onClick={() => setHideArticle(true)} className="back-button">
-                    <img src={Arrow}/>
-                </button>
-                <div className="blog-article">
-                    <div className="article-header">
-                        <h1>{props.title}</h1>
-                        <p className="article-type">{props.type}</p>
-                        <p className="article-timestamp">Made on: {convertDate(props.createdAt)}</p>
-                    </div>
-                    <img src={getURL(props.imgDir1)}/>
-                    <div className="article-content">
-                        {parse(props.content)}
+        <div className="center">
+            <div className="fade">
+                <div className={`${hideArticle ? "fade-out" : ""}`} onAnimationEnd={() => props.changeArticle(0)}>
+                    <button onClick={() => setHideArticle(true)} className="back-button">
+                        <img src={Arrow}/>
+                    </button>
+                    <div className="blog-article">
+                        <div className="article-header">
+                            <h1>{props.title}</h1>
+                            <p className="article-type">{props.type}</p>
+                            <p className="article-timestamp">Made on: {convertDate(props.createdAt)}</p>
+                        </div>
+                        <img src={getURL(props.imgDir1)}/>
+                        <div className="article-content">
+                            {parse(props.content)}
+                        </div>
                     </div>
                 </div>
             </div>
