@@ -360,7 +360,7 @@ body {
     background-color: #47474763;
     border-radius: 1rem;
     padding: .5rem;
-    margin: 2.5rem 0 0 -20rem;
+    margin: 2.5rem 0 0 -18vw;
     border: .25rem solid #ffffff;
     transition: transform 250ms ease-out;
 }
