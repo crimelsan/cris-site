@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
-    background-size: 65vw;
+    background-size: 70vw;
     animation: background-grow ease-out forwards;
     animation-duration: 2s;
 }
@@ -416,4 +416,18 @@ option {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-size: 80vw;
+        background-repeat: repeat-y;
+    }
+    @keyframes background-grow {
+        from {
+            background-position: -150vw center;
+        } to {
+            background-position: center;
+        }
+    }
 }
