@@ -253,7 +253,7 @@ body {
 @media screen and (max-width: 1000px) {
     body {
         background-position: absolute;
-        background-size: 200vh;
+        background-size: 500vh;
     }
 
     @keyframes background-grow {
