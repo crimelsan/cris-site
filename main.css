@@ -459,3 +459,7 @@ a {
         flex-direction: column;
     }
 }
+
+.center {
+    display: flex;
+}
