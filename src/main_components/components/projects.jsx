@@ -28,13 +28,7 @@ export default function Projects() {
                                     about section to just describe me, as well as links to places you can find me on. It also contains the music I make, photos I take, and the blogs
                                     I write on seperate pages. I also like the little intro sequence I made, as well as the transitions. I think it turned out pretty decent :)"
                         img="cris-site.png"
-                    />
-                    <ProjectItem
-                        title="UFO 50 Guide Site"
-                        status="In-progress"
-                        description="This is supposed to be a sort of guide/fan website based on the game UFO 50 developed by Mossmouth. I'm planning on making a guide for each game
-                                    in a sort of game magazine-esque style. It will also contain music, secrets, and the history behind each game, allowing for an easy viewing experience,
-                                    as well as just a cool place to browse interesting content."
+                        link="https://random-corner.com"
                     />
                     <ProjectItem
                         title="Safety Campus App"
